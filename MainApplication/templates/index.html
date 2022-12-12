@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+</head>
+    
+<body>
+<h1>
+        Welcome to Wordle Difficulty Analysis Application
+    </h1>
+    Please select the date you need to analysis from the following list.
+<form action="{{ url_for('predict') }}" method="post">            
+<input type='date' name='date' min='2022-11-24'></input>
+<input type="submit" value="Submit">
+    </form>
+</body>
+</html>
